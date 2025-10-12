@@ -380,6 +380,11 @@ nav:hover .lens {
 /* mobile */
 @media (max-width: 600px) {
 .container {
-    padding: clamp(1rem,0rem, 8rem);
+  padding: clamp(1rem,0rem, 8rem);
  }
+  .portfolio-wrapper {
+    gap: 40px;
+ }
+  
 }
+
