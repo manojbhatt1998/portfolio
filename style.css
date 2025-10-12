@@ -7,6 +7,8 @@
   --menu_line_height: 2px;
   --menu_line_gap: 4px;
   --color_brown: #6b3d2b;
+  --px-theme-bg: #f4b400;
+
 }
 
 /* header css */
@@ -87,6 +89,9 @@ span {
     background: #f7bf00;
     padding: 20px;
   }
+  .portfolio-wrapper {
+    padding: clamp(2em, 5vw, 4rem);
+}
 
 }
 
@@ -144,7 +149,7 @@ span {
 
   .Header_hamburger_box__bVA68 {
     margin-top: 2%;
-    margin-right: 1%;
+    margin-right: 2%;
     float: right;
   }
 
@@ -216,10 +221,6 @@ nav:hover .lens {
 }
 
 
-:root {
-  --px-theme-bg: #f4b400;
-}
-
 /**************** Section Portfolio *****************/
 #shopify-portfolio {
   background: #fff;
@@ -228,12 +229,12 @@ nav:hover .lens {
 }
 
 #shopify-portfolio h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 60px;
-  font-family: "Russo One", sans-serif;
-  text-transform: uppercase;
-
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
 }
 
 #shopify-portfolio h2 span {
@@ -342,11 +343,7 @@ nav:hover .lens {
   color: #fff;
 }
 
-.view-more-btn a {
-  color: #000;
-  text-decoration: none;
-}
-
+/* View More Button */
 .view-more-btn {
   display: block;
   margin: 40px auto 0;
@@ -360,6 +357,13 @@ nav:hover .lens {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+.view-more-btn a {
+  color: #000;
+  text-decoration: none;
+}
+.view-more-btn:hover {
+    box-shadow: 4px 3px 10px rgb(0 0 0 / 29%);
+}
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -371,4 +375,11 @@ nav:hover .lens {
   #shopify-portfolio h2 {
     font-size: 2rem;
   }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+.container {
+    padding: clamp(1rem,0rem, 8rem);
+ }
 }
