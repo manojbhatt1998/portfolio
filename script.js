@@ -79,5 +79,12 @@ jQuery(document).ready(function () {
   window.addEventListener("mousemove", editCursor);
 })();
 
+// mobile menu toggle
+const hamburger = document.querySelector('.Header_hamburger_box__bVA68');
+const drawer = document.getElementById('mobileDrawer');
+hamburger.addEventListener('click', () => {
+  drawer.classList.toggle('open');
+});
+  
 
 });
