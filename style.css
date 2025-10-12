@@ -78,6 +78,9 @@ span {
   transform: translate(-50%, -50%) scale(8);
 }
 
+  .drawer {
+    display: none;
+  }
 
 
 @media (min-width: 900px) {
@@ -154,9 +157,63 @@ span {
     margin-right: 2%;
     float: right;
   }
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background-color: #d60000;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+
+.drawer.open {
+  left: 0; display: block
+}
+
+.drawer-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.drawer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer nav ul li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+     transition: transform 5s ease, opacity 5s ease;
+    transform: translateY(100%);
+    opacity: 0;
+    display: block;
+}
+
+.drawer.open nav ul li {
+  transform: translateY(0);
+  opacity: 1;
+}
+.drawer.open nav ul li a {
+    color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
 
   .dekstop-nav,
-  .lens {
+  .lens,
+  .drawer {
     display: none;
   }
 
@@ -177,7 +234,7 @@ span {
 
 .content {
   position: relative;
-  z-index: 2;
+  z-index: -1;
   padding: clamp(1em, 1em, 5rem);
   color: black;
 }
