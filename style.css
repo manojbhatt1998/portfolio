@@ -163,8 +163,7 @@ span {
   left: -100%;
   width: 80%;
   height: 100%;
-  background-color: #d60000;
-  color: white;
+  background-color: #FFC107;
   transition: left 0.3s ease;
   z-index: 999;
 }
@@ -188,6 +187,7 @@ span {
 }
 
 .drawer nav ul li {
+   color: white;
     margin: 1rem 0;
     font-size: 1.2rem;
     cursor: pointer;
@@ -202,7 +202,7 @@ span {
   opacity: 1;
 }
 .drawer.open nav ul li a {
-    color: #6b3d2b;
+    color: #000 !important;
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
