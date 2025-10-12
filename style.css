@@ -1,0 +1,329 @@
+
+:root {
+    --px-theme-clr: #222;
+    --px-theme-bg: #f7bf00;
+  --x: 50%;
+  --y: 50%;
+  --size: 50px;
+    --menu_line_height: 2px;
+    --menu_line_gap: 4px;
+        --color_brown: #6b3d2b;
+}
+
+/* header css */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  cursor: none;
+}
+body {
+  margin: 0;
+  background: radial-gradient(circle at 50% 50%, #ffffff, #f5f5f5);
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  cursor: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hover-this {
+  transition: all 0.3s ease;
+}
+
+span {
+  display: inline-block;
+  font-family: "Russo One", sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 36px;
+  pointer-event: none;
+  transition: transform 0.1s linear;
+}
+
+.dot {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .dot {
+  transform: translate(-50%, -50%) scale(8);
+}
+
+
+
+@media (min-width: 900px) {
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    z-index: 9999;
+    /* position: absolute; */
+    background: #f7bf00;
+    padding: 20px;
+}
+
+}
+
+@media (max-width: 900px) {
+    .Header_hamburger_box__bVA68 {
+    width: 50px;
+    height: 50px;
+}
+.Header_hamburger_icon__Q4fwk span:nth-child(4) {
+    top: calc((var(--menu_line_height) + var(--menu_line_gap))*2);
+}
+.Header_hamburger_icon__Q4fwk {
+    position: relative;
+}
+.Header_hamburger_box__bVA68 {
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 22;
+    background-color: #fff;
+    padding: 12px 10px;
+    border-radius: 7px;
+    border: 2px solid var(--color_brown);
+    box-shadow: 4px 4px 0 #6b3d2b;
+    transition: all .1s linear
+}
+.Header_hamburger_icon__Q4fwk span {
+    display: block;
+    position: absolute;
+    background-color: var(--color_brown);
+    height: var(--menu_line_height);
+    width: 100%;
+    border-radius: 50px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.Header_hamburger_box__bVA68 {
+    margin-top: 2%;
+    margin-right: 1%;
+    float: right;
+}
+
+  .dekstop-nav , 
+  .lens{
+    display: none;
+  }
+  nav {
+    top: 30%;
+    
+  }
+
+  .hover-this {
+    width: 100%;
+    padding: 25px 0;
+    display: inline-block;
+  }
+}
+/* end of header css */
+
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: clamp(2em , 4em , 5rem);
+    color: black;
+}
+
+/* .home-text {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: black;
+} */
+/* .home-text {
+    color: transparent;
+    background: radial-gradient(circle at var(--x, -250px) var(--y, -250px), #fff var(--size, 0px), #222 var(--size, 0px));
+    background-clip: text;
+    color: transparent;
+    background-clip: text;
+   -webkit-background-clip: text;
+} */
+
+
+.mega {
+    font-size: clamp(3rem, 10vw, 10vw);
+    line-height: 0.8;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.6vw;
+}
+.delta {
+  font-family: 'Space Mono', monospace;
+  font-size: max(1.2vw, 24px);
+  font-weight: 400;
+  margin-top: 1.2rem;
+  line-height: max(1.8vw, 32px);
+}
+
+.write {
+  padding: 0 4px;
+  background-color: var(--px-theme-bg);
+  color: #000;
+}
+
+.lens {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+  background-image: url('https://img.freepik.com/free-vector/online-banking-software-laptop-with-program-code-screen_39422-798.jpg?t=st=1760197291~exp=1760200891~hmac=78dea6a5b42fcd800632910c380015cd96e15e1f37a738f296e13ba6d03fd70d&w=1480');
+  background-repeat: no-repeat;
+  /* background-size: 200vw 200vh; */
+  transition: transform 0.1s ease;
+}
+
+/* https://shtheme.com/demosd/akordian/wp-content/uploads/2023/07/background.jpg */
+nav:hover .lens {
+    opacity: 0 !important;
+}
+
+
+
+:root {
+  --px-theme-bg: #f4b400;
+}
+
+/* Section */
+#shopify-portfolio {
+  background: #fff;
+  color: #111;
+  padding: clamp(2em, 5vw, 4rem);
+}
+
+#shopify-portfolio h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-family: "Russo One", sans-serif;
+  text-transform: uppercase;
+}
+
+#shopify-portfolio h2 span {
+  background: var(--px-theme-bg);
+  padding: 5px 15px;
+  border-radius: 6px;
+  color: #000;
+}
+
+/* Portfolio grid */
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Card */
+.video-card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: #fafafa;
+}
+
+.video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+}
+
+/* Scroll Effect */
+.scroll-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: translateY(0);
+  transition: transform 8s ease-in-out;
+  display: block;
+}
+
+.scroll-card:hover img {
+  transform: translateY(-60%);
+}
+
+/* Overlay */
+.video-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease;
+}
+
+.video-card:hover .overlay {
+  opacity: 1;
+}
+
+.video-card .overlay a {
+  background: var(--px-theme-bg);
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.video-card .overlay a:hover {
+  background: #000;
+  color: #fff;
+}
+.view-more-btn{
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background: var(--px-theme-bg);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .portfolio-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  #shopify-portfolio h2 {
+    font-size: 2rem;
+  }
+}
