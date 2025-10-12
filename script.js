@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+console.log("Script loaded");
+// MAGNIFYING GLASS EFFECT
 const mouse = document.querySelector('.lens');
+if (!mouse) {
+  console.error("Element with class '.lens' not found!");
+  return;
+}
 const content = document.querySelector('.content');
 mouse.style.opacity = 0;
+
 
 content.addEventListener('mousemove', (e) => {
   mouse.style.opacity = 1;
@@ -79,12 +85,17 @@ jQuery(document).ready(function () {
   window.addEventListener("mousemove", editCursor);
 })();
 
+
 // mobile menu toggle
 const hamburger = document.querySelector('.Header_hamburger_box__bVA68');
 const drawer = document.getElementById('mobileDrawer');
+const body = document.body;
+
 hamburger.addEventListener('click', () => {
   drawer.classList.toggle('open');
+  if (drawer.classList.contains('open')) {
+    body.classList.add('no-scroll');
+  }
 });
-  
 
 });
