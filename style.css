@@ -202,7 +202,14 @@ span {
   opacity: 1;
 }
 .drawer.open nav ul li a {
-    color: #fff;
+    color: #6b3d2b;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body.no-scroll {
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .social-icons {
