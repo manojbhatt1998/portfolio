@@ -1,49 +1,49 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Manoj — Frontend & Shopify Developer</title>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Manoj — Frontend & Shopify Developer</title>
 
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="description"
-    content="Get in touch with Manoj, a Frontend & Shopify Developer specializing in Shopify Plus, Liquid, React.js, Node.js, and custom eCommerce web solutions." />
-  <meta name="keywords"
-    content="Shopify Developer, Frontend Developer, Shopify Plus, Liquid, HTML, CSS, JavaScript, React.js, Node.js, PHP, WordPress, WooCommerce, Wix, REST API Integration, Web Developer Portfolio" />
-  <meta name="author" content="Manoj" />
+<!-- ✅ SEO Meta Tags -->
+<meta name="description"
+  content="Get in touch with Manoj, a Frontend & Shopify Developer specializing in Shopify Plus, Liquid, React.js, Node.js, and custom eCommerce web solutions." />
+<meta name="keywords"
+  content="Shopify Developer, Frontend Developer, Shopify Plus, Liquid, HTML, CSS, JavaScript, React.js, Node.js, PHP, WordPress, WooCommerce, Wix, REST API Integration, Web Developer Portfolio" />
+<meta name="author" content="Manoj" />
 
-  <!-- ✅ Open Graph / Social Sharing Tags -->
-  <meta property="og:title" content="Contact | Manoj — Frontend & Shopify Developer" />
-  <meta property="og:description" content="Let's build your next eCommerce store together! Contact Manoj, a professional Shopify & Frontend Developer." />
-  <meta property="og:image" content="https://yourdomain.com/images/contact-preview.png" />
-  <meta property="og:url" content="https://yourdomain.com/contact" />
-  <meta property="og:type" content="website" />
-    <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<!-- ✅ Open Graph / Social Sharing Tags -->
+<meta property="og:title" content="Contact | Manoj — Frontend & Shopify Developer" />
+<meta property="og:description"
+  content="Let's build your next eCommerce store together! Contact Manoj, a professional Shopify & Frontend Developer." />
+<meta property="og:image" content="https://yourdomain.com/images/contact-preview.png" />
+<meta property="og:url" content="https://yourdomain.com/contact" />
+<meta property="og:type" content="website" />
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<!-- ================= SCRIPTS ================= -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<script src="script.js"></script>
 
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact | Manoj — Frontend & Shopify Developer" />
-  <meta name="twitter:description" content="Contact Manoj for Shopify, Liquid, and modern web development projects." />
-  <meta name="twitter:image" content="https://yourdomain.com/images/contact-preview.png" />
+<!-- ✅ Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Contact | Manoj — Frontend & Shopify Developer" />
+<meta name="twitter:description" content="Contact Manoj for Shopify, Liquid, and modern web development projects." />
+<meta name="twitter:image" content="https://yourdomain.com/images/contact-preview.png" />
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" type="image/png" href="https://yourdomain.com/favicon.png" />
+<!-- ✅ Favicon -->
+<link rel="icon" type="image/png" href="https://yourdomain.com/favicon.png" />
 
-  <!-- ✅ Canonical URL -->
-  <link rel="canonical" href="https://yourdomain.com/contact" />
+<!-- ✅ Canonical URL -->
+<link rel="canonical" href="https://manojbhatt1998.github.io/portfolio/contact.html" />
 
+<!-- ✅ Stylesheets -->
+<link rel="stylesheet" href="style.css" />
 </head>
 
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-
   body {
-    background-color: #000;
+    background-color: #000 !important;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -51,141 +51,61 @@
     min-height: 100vh;
     flex-direction: column;
   }
-
-  .contact-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    padding: 40px;
-    background: #111;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(255, 255, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .contact-section::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 250px;
-    height: 250px;
-    background: #ffce00;
-    border-radius: 50%;
-    opacity: 0.2;
-    animation: float 6s ease-in-out infinite alternate;
-  }
-
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-
-    100% {
-      transform: translateY(40px);
-    }
-  }
-
-  .contact-img {
-    flex: 1;
-    text-align: center;
-  }
-
-  .contact-img img {
-    width: 100%;
-    max-width: 380px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 255, 0, 0.2);
-    animation: fadeIn 1s ease forwards;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .contact-info {
-    flex: 1;
-    text-align: center;
-  }
-
-  .contact-info h2 {
-    font-size: 2.5rem;
-    color: #ffce00;
-    margin-bottom: 20px;
-  }
-
-  .contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-  }
-
-  .contact-icons a {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 30px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .contact-icons a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ffce00;
-    top: 100%;
-    left: 0;
-    transition: all 0.4s ease;
-    z-index: -1;
-  }
-
-  .contact-icons a:hover::after {
-    top: 0;
-  }
-
-  .contact-icons a:hover {
-    color: #000;
-    transform: scale(1.15);
-  }
-
-  @media (max-width: 768px) {
-    .contact-section {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .contact-img img {
-      max-width: 300px;
-    }
-  }
 </style>
 </head>
-<body>
 
+<body>
+    <!-- ================= NAVIGATION ================= -->
+  <nav class="dekstop-nav">
+    <a href="/" class="hover-this"><span>HOME</span></a>
+    <a href="#shopify-portfolio" class="hover-this"><span>PROJECTS</span></a>
+    <a href="#about" class="hover-this"><span>ABOUT</span></a>
+    <a href="#contact" class="hover-this"><span>CONTACT</span></a>
+    <div class="dot"></div>
+  </nav>
+
+  <div class="Header_hamburger_box__bVA68">
+    <div class="Header_hamburger_icon__Q4fwk "><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <div id="mobileDrawer" class="drawer">
+    <div class="drawer-content">
+      <nav>
+        <ul>
+          <li> <a href="/"> Home </a></li>
+          <li> <a href="#shopify-portfolio"> PROJECTS </a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================ HERO SECTION ============================================== -->
+  <div class="lens"></div>
+  <div class="container">
+    <div class="content" style="display: block;">
+      <div class="home-text">
+        <h1 class="mega">I'm Manoj <br> Bhatt.</h1>
+        <h1 class="delta">
+          I'm a freelance / Full-Time <span class="write">Front-End Developer.</span>
+          <span class="typed-cursor">|</span>
+        </h1>
+      </div>
+      <div id="home-background"></div>
+    </div>
+  </div>
+
+  <!-- ========================================== CONTACT SECTION ================================================= -->
   <section class="contact-section">
     <div class="contact-img">
-      <img src="manoj_bhatt_Contact.png" alt="Manoj bhatt Contact Front-End Developer" style="width: 100%; max-width: 400px;">
+      <img src="manoj_bhatt_Contact.png" alt="Manoj bhatt Contact Front-End Developer"
+        style="width: 100%; max-width: 400px;">
     </div>
 
     <div class="contact-info">
@@ -203,6 +123,5 @@
       </div>
     </div>
   </section>
-
 </body>
 </html>
