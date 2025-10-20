@@ -36,19 +36,22 @@ body.index {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: cursive;
 }
+
 .contact .home-text {
-    color: #fff;
-    font-family: cursive;
+  color: #fff;
+  font-family: cursive;
 }
+
 body.contact {
-    background-color: #000 !important;
-    color: #fff;
-    /* display: flex; */
-    justify-content: center;
-    /* align-items: center; */
-    /* min-height: 100vh; */
-    /* flex-direction: column; */
+  background-color: #000 !important;
+  color: #fff;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  /* min-height: 100vh; */
+  /* flex-direction: column; */
 }
+
 .container {
   padding: clamp(1rem, 2rem, 4rem);
   width: 100%;
@@ -234,6 +237,7 @@ span {
     display: flex;
     gap: 1rem;
     font-size: 1.5rem;
+    justify-content: center;
   }
 
   .dekstop-nav,
