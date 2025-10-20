@@ -222,6 +222,7 @@ span {
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: cursive;
   }
 
   body.no-scroll {
