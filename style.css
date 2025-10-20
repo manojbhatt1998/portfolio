@@ -36,6 +36,10 @@ body.index {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: cursive;
 }
+.contact .home-text {
+    color: #fff;
+    font-family: cursive;
+}
 body.contact {
   background-color: #000 !important;
   color: #fff;
