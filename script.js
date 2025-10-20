@@ -9,7 +9,7 @@ if (!mouse) {
 const content = document.querySelector('.content');
 mouse.style.opacity = 0;
 
-
+if(content){
 content.addEventListener('mousemove', (e) => {
   mouse.style.opacity = 1;
 
@@ -31,6 +31,8 @@ content.addEventListener('mousemove', (e) => {
 content.addEventListener('mouseleave', () => {
   mouse.style.opacity = 0;
 });
+
+}
 
 
 // TYPED.JS ANIMATION
