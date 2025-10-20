@@ -726,15 +726,18 @@ nav:hover .lens {
 }
 
 
-/* Start mobile css */
+/***************** Start mobile css **************************88*/
 @media (max-width: 600px) {
   .container {
     padding: clamp(1rem, 0rem, 8rem);
   }
-
   .portfolio-wrapper {
     gap: 40px;
   }
+  .profile-img {
+    margin-bottom: 1rem;
+ }
+
 }
 
 /* close media css */
