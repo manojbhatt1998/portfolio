@@ -712,6 +712,7 @@ nav:hover .lens {
   .contact-section {
     flex-direction: column;
     text-align: center;
+    height: 100vh;
   }
 
   .contact-img img {
