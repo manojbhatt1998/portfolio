@@ -114,8 +114,19 @@ span {
 
 @media (max-width: 900px) {
   .Header_hamburger_box__bVA68 {
+    position: absolute;
+    right: 0px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 22;
+    background-color: #fff;
+    padding: 12px 10px;
+    border-radius: 7px;
+    border: 2px solid var(--color_brown);
+    box-shadow: 4px 4px 0 #6b3d2b;
+    transition: all .1s linear
   }
 
   .Header_hamburger_icon__Q4fwk span:first-child {
@@ -135,17 +146,7 @@ span {
     box-shadow: 2px 2px 0 #6b3d2b;
   }
 
-  .Header_hamburger_box__bVA68 {
-    cursor: pointer;
-    pointer-events: all;
-    z-index: 22;
-    background-color: #fff;
-    padding: 12px 10px;
-    border-radius: 7px;
-    border: 2px solid var(--color_brown);
-    box-shadow: 4px 4px 0 #6b3d2b;
-    transition: all .1s linear
-  }
+
 
   .Header_hamburger_icon__Q4fwk {
     position: relative;
