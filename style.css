@@ -569,6 +569,7 @@ nav:hover .lens {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   gap: 3rem;
   flex-wrap: wrap;
   max-width: 1000px;
